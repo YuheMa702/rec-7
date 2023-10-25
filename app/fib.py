@@ -9,5 +9,6 @@ def fibonacci(position):
   if(position == 1 or position == 2):
     return 1 
   if(position < 0):
-  raise ValueError("Invalid input")
+    raise ValueError("Invalid input")
+
   return fibonacci(position - 1) + fibonacci(position - 2)
